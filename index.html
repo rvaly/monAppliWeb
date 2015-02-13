@@ -10,6 +10,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="monIcon.ico" /> 
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Mon application web</title>
+  <script src="monscript.js"></script>
   </head>
   <body>
     <div id="monEntete">
@@ -28,5 +29,58 @@
 <li><a href="index.html" title="Nous contacter">Nous contacter</a></li>
 </ul>
 </div>
+<form name="maCalculette" action="" onSubmit="affResult();return false;">
+<div id="contenuPage">
+<table class="calc">
+<tr>
+<td colspan="4" class="ecran">
+<input type="text" name="ecran" class="ecran" />
+</td>
+</tr>
+<tr>
+<td class="boutons"><input type="button" class="unBouton" value="7"
+onClick="touche('7')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="8"
+onClick="touche('8')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="9"
+onClick="touche('9')" /></td>
+<td class="boutons"><input type="button" class="unBouton"
+value="&divide;" onClick="touche('/')" /></td>
+</tr>
+<tr>
+<td class="boutons"><input type="button" class="unBouton" value="4"
+onClick="touche('4')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="5"
+onClick="touche('5')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="6"
+onClick="touche('6')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="x"
+onClick="touche('*')" /></td>
+</tr>
+<tr>
+<td class="boutons"><input type="button" class="unBouton" value="1"
+onClick="touche('1')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="2"
+onClick="touche('2')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="3"
+onClick="touche('3')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="-"
+onClick="touche('-')" /></td>
+</tr>
+<tr>
+<td class="boutons"><input type="button" class="unBouton" value="0"
+onClick="touche('0')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="."
+onClick="touche('.')" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="="
+onClick="affResult()" /></td>
+<td class="boutons"><input type="button" class="unBouton" value="+"
+onClick="touche('+')" /></td>
+</tr>
+</table>
+</div>
+</form>
+
+
   </body>
 </html>
